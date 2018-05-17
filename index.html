@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Разчёт стоимости</title>
+	<link rel="stylesheet" type="text/css" href="assets/styles/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/styles/cssworld.ru-xcal.css" />
+</head>
+ <header>
+ 	<h1>Разчёт стоимости!</h1>
+ </header>
+<body>
+	<div class="content">
+		<div class="spisok-1">
+			<div class="spisok-1-name">Придмет мебели</div>
+			<div class="spisok-1-item">
+				<div class="spisok-1-item-divan">
+					<img src="assets/img/couch.png">
+					<div class="spisok-1-item-divan-name">Диван</div>
+				</div>
+				<input type="checkbox" name="" class="spisok-1-item-selected">
+			</div>
+			<div class="spisok-1-item">
+				<div class="spisok-1-item-divan">
+					<img src="assets/img/armchair.png">
+					<div class="spisok-1-item-divan-name">кресло</div>
+				</div>
+				<input type="checkbox" name="" class="spisok-1-item-selected">
+			</div>
+			<div class="spisok-1-item">
+				<div class="spisok-1-item-divan">
+					<img src="assets/img/mattress.png">
+					<div class="spisok-1-item-divan-name">Матрас</div>
+				</div>
+				<input type="checkbox" name="" class="spisok-1-item-selected">
+			</div>
+			<div class="spisok-1-item">
+				<div class="spisok-1-item-divan">
+					<img src="assets/img/dining-chair.png">
+					<div class="spisok-1-item-divan-name">Стул</div>
+				</div>
+				<input type="checkbox" name="" class="spisok-1-item-selected">
+			</div>
+			<div class="spisok-1-item">
+				<div class="spisok-1-item-divan">
+					<img src="assets/img/carpet.png">
+					<div class="spisok-1-item-divan-name">ковёр</div>
+				</div>
+				<input type="checkbox" name="" class="spisok-1-item-selected">
+			</div>
+			<div class="spisok-1-item">
+				<div class="spisok-1-item-divan">
+					<img src="assets/img/bean.png">
+					<div class="spisok-1-item-divan-name">Пуф</div>
+				</div>
+				<input type="checkbox" name="" class="spisok-1-item-selected">
+			</div>
+			<div class="spisok-1-item">
+				<div class="spisok-1-item-divan">
+					<img src="assets/img/kitchen.png">
+					<div class="spisok-1-item-divan-name">Куханный уголок</div>
+				</div>
+				<input type="checkbox" name="" class="spisok-1-item-selected">
+			</div>
+		</div>
+		<div class="spisok-2">
+			<div class="spisok-2-name">Параметры</div>
+			<div class="spisok-2-item">
+			<label>
+            <select name="education">
+                <option value="higher">двухместный</option>
+                <option value="middle" selected>одноместный</option>
+            </select>
+        	</label>
+        	<label>
+            <select name="education">
+                <option value="higher">королевское</option>
+                <option value="middle" selected>ретро стиль</option>
+            </select>
+        	</label>
+        	<label>
+            <select name="education">
+                <option value="higher">двухместный</option>
+                <option value="middle" selected>одноместный</option>
+                <option value="higher">жосткий</option>
+                <option value="higher">мягкий</option>
+            </select>
+        	</label>
+        	<label>
+            <select name="education">
+                <option value="higher">хлипкий</option>
+                <option value="middle" selected>хороший</option>
+            </select>
+        	</label>
+        	<label>
+            <select name="education">
+                <option value="higher">краденный</option>
+                <option value="higher">без ворса</option>
+                <option value="middle" selected>ворс</option>
+            </select>
+        	</label>
+        	<label>
+            <select name="education">
+                <option value="higher">гранитный</option>
+                <option value="middle" selected>орньжевый</option>
+                <option value="higher">синий</option>
+                <option value="higher">зелёный</option>
+                <option value="higher">тяжёлый</option>
+            </select>
+        	</label>
+        	<label>
+            <select name="education">
+                <option value="higher">разширенный</option>
+                <option value="middle" selected>одноместный</option>
+                <option value="higher">ужатый</option>
+            </select>
+        	</label>
+			</div>
+		</div>
+		<div class="spisok-3">
+			<div class="spisok-3-name">Количество</div>
+			<div class="spisok-3-item">
+				<span class="spisok-3-item-bl"></span>
+    			<input class="spisok-3-item-input" type="number" value="1" min="1"  max="10">
+    			<span class="spisok-3-item-br"></span>
+			</div>
+
+		</div>
+		<div class="spisok-4">
+			<div class="bg">
+			<div class="spisok-4-name">Дата и время</div>
+			<div class="spisok-4-item">
+				<div class="spisok-4-item-left">
+					<input class="colender" type="text" value="" size="10" onClick="xCal(this)" onmouseenter="xCal(this)" onKeyUp="xCal()">
+					<div class="time">
+						<div class="spisok-4-item-left-bl"></div>
+						<input class="spisok-4-item-left-input" type="time" name="time" value="12:00">
+						<div class="spisok-4-item-left-br"></div>
+					</div>
+				</div>
+				<div class="spisok-4-item-right">
+					<div class="inputpozihon">
+  						<input type="text" name="pozihon" placeholder="Введите Ваш Адрес" class="contacts pozihon">
+					</div>
+					<div class="inputphone">
+  						<input type="text" name="phone" placeholder="Введите телефон" class="contacts">
+					</div>
+					<div class="inputemail">
+  						<input type="text" name="email" placeholder="Введите E-Mail" class="contacts">
+					</div>
+				</div>
+			</div>
+			</div>
+			<div class="itog">
+				<div class="itog-item">
+					<div class="itog-item-up">
+						<div class="itog-item-up-icon"></div>
+						<div class="itog-item-up-cena">Цена-</div>
+						<div class="itog-item-up-cena-text"></div>
+					</div>
+					<div class="itog-item-down">
+						<div class="itog-item-down-icon"></div>
+						<div class="itog-item-down-scidka">Цена-</div>
+						<div class="itog-item-down-scidka-text"></div>
+						<div class="final">Заказать</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<input id="jaloby"/>
+		<button type="button" onclick="addTextToInput(this)">1</button>
+		<button type="button" onclick="addTextToInput(this)">2</button>
+		<button type="button" onclick="addTextToInput(this)">3</button>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/scripts/script.js"></script>
+	<script type="text/javascript" src="assets/scripts/cssworld.ru-xcal.js"></script>
+</body>
+</html>

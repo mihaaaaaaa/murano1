@@ -1,0 +1,220 @@
+body, h1, h2, h3, h4, a, p {
+	margin: 0;
+	font-family: "Trebuchet MS";
+}
+
+* {
+	box-sizing: border-box;
+	transform:1.2;
+}
+
+h1{
+	padding: 20px 0 60px 20px;
+}
+
+li {
+	list-style-type: none;
+	padding-top: 20px;
+	visibility: hidden;
+}
+
+li:hover{
+visibility: visible;
+}
+
+
+.content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	width: 1000px;
+}
+
+.spisok-1,
+.spisok-2,
+.spisok-3,
+.bg {
+	margin-left: 10px;
+	padding-left: 20px;
+	padding-top: 20px;
+	border: 1px solid #999999;
+	border-radius: 5px;
+	background-color: #f1edee;
+	width: 18%;
+}
+
+
+
+.itog{
+	margin-left: 10px;
+	padding-left: 20px;
+	padding-top: 20px;
+	border: 1px solid #999999;
+	border-radius: 5px;
+	background-color: #53ea93;
+	width: 37%;
+}
+
+.spisok-1{
+float: right;
+}
+
+.bg{
+	width: 100%;
+}
+
+.spisok-1-name,
+.spisok-2-name,
+.spisok-3-name,
+.spisok-4-name{
+	font-size: 11px;
+}
+
+.spisok-1-item,
+.spisok-2-item,
+.spisok-3-item,
+.spisok-4-item{
+	display: flex;
+	align-items: center;
+	padding-top: 20px;
+}
+
+.spisok-3-item{
+	padding-top: 0;
+	margin-top: 20px;
+	border: 1px solid #ccc;
+	width: 118px;
+}
+
+.spisok-1-item-divan{
+	display: flex;
+	align-items: center;
+}
+
+.spisok-1-item-divan-name{
+	display: inline;
+	padding-left: 10px;
+	width: 88px;
+}
+
+.spisok-1-item-icon{
+	background-image: url(../img/couch.png);
+	background-repeat: no-repeat;
+}
+
+.spisok-1-item-selected{
+	float: right;
+	padding-right: 10px;
+	width: 30px;
+	height: 30px;
+	background-image: url(../img/v.jpg);
+	background-repeat: no-repeat;
+}
+
+.spisok-1-item-selected:click{
+	background-image: url(../img/v+.jpg);
+}
+
+.spisok-2-item{
+display: inline-block;
+padding-top: 0;
+}
+
+select{
+	margin-top: 37px;
+	width: 110px;
+}
+
+.spisok-3-item-bl{
+	background-image: url(../img/switch.jpg);
+	height: 27px;
+	width: 27px;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+.spisok-3-item-br{
+	background-image: url(../img/switch.jpg);
+	height: 27px;
+	width: 27px;
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}
+
+.spisok-3-item-input{
+	padding: 0px;
+	width: 130;
+}
+
+.spisok-4-item-right{
+	margin-left: 20px;
+}
+
+.spisok-4-item-left-bl{
+	background-image: url(../img/switch.jpg);
+	width: 30px;
+	height: 30px;
+}
+
+.spisok-4-item-left-input{
+	width: 100px;
+}
+
+.spisok-4-item-left-br{
+	background-image: url(../img/switch.jpg);
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+	width: 30px;
+	height: 30px;
+}
+
+.time{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #ccc;
+}
+
+
+.inputphone input {
+  background: url('../img/icon-2.jpg');
+  background-repeat: no-repeat;
+}
+
+input.contacts {
+  font-size: 13px;
+  width: 150px;
+  padding-left: 20px;
+  margin-top: 20px;
+  box-shadow: none;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.inputemail input{
+	background: url('../img/icon-3.jpg');
+	background-repeat: no-repeat;
+}
+
+.inputpozihon input {
+	background: url('../img/icon-1.jpg');
+	background-repeat: no-repeat;
+}
+.pozihon {
+	padding-bottom: 45px;
+}
+
+.colender{
+	margin-bottom: 140px;
+}
