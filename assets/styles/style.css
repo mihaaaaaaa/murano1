@@ -219,7 +219,7 @@ input.contacts {
 	margin-bottom: 140px;
 }
 
-.itog-item-down-value,
-.itog-item-down-scidka{
+.itog-item-up,
+.itog-item-down{
  display: flex;
 }
