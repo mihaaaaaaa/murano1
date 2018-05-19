@@ -218,3 +218,8 @@ input.contacts {
 .colender{
 	margin-bottom: 140px;
 }
+
+.itog-item-down-value,
+.itog-item-down-scidka{
+ display: flex;
+}
