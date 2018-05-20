@@ -223,3 +223,9 @@ input.contacts {
 .itog-item-down{
  display: flex;
 }
+
+.itog-item-up-cena-text,
+.itog-item-down-scidka-text{
+	width: 100px;
+	height: 20px;
+}

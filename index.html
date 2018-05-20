@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Разчёт стоимости</title>
+	<title>Раcчёт стоимости</title>
 	<link rel="stylesheet" type="text/css" href="assets/styles/style.css">
 	<link rel="stylesheet" type="text/css" href="assets/styles/cssworld.ru-xcal.css" />
 </head>
  <header>
- 	<h1>Разчёт стоимости!</h1>
+ 	<h1>Раcчёт стоимости!</h1>
  </header>
 <body>
 	<div class="content">
@@ -57,7 +57,7 @@
 			<div class="spisok-1-item">
 				<div class="spisok-1-item-divan">
 					<img src="assets/img/kitchen.png">
-					<div class="spisok-1-item-divan-name">Куханный уголок</div>
+					<div class="spisok-1-item-divan-name">Кухонный уголок</div>
 				</div>
 				<input type="checkbox" name="" class="spisok-1-item-selected">
 			</div>
@@ -81,7 +81,7 @@
             <select name="education">
                 <option value="higher">двухместный</option>
                 <option value="middle" selected>одноместный</option>
-                <option value="higher">жосткий</option>
+                <option value="higher">жёсткий</option>
                 <option value="higher">мягкий</option>
             </select>
         	</label>
@@ -101,7 +101,7 @@
         	<label>
             <select name="education">
                 <option value="higher">гранитный</option>
-                <option value="middle" selected>орньжевый</option>
+                <option value="middle" selected>оранжевый</option>
                 <option value="higher">синий</option>
                 <option value="higher">зелёный</option>
                 <option value="higher">тяжёлый</option>
@@ -109,7 +109,7 @@
         	</label>
         	<label>
             <select name="education">
-                <option value="higher">разширенный</option>
+                <option value="higher">раcширенный</option>
                 <option value="middle" selected>одноместный</option>
                 <option value="higher">ужатый</option>
             </select>
@@ -142,7 +142,7 @@
   						<input type="text" name="pozihon" placeholder="Введите Ваш Адрес" class="contacts pozihon">
 					</div>
 					<div class="inputphone">
-  						<input type="text" name="phone" placeholder="Введите телефон" class="contacts">
+  						<input type="text" onkeyup="var k=/['0-9',':']/;" name="phone" placeholder="Введите телефон" class="contacts">
 					</div>
 					<div class="inputemail">
   						<input type="text" name="email" placeholder="Введите E-Mail" class="contacts">
@@ -155,12 +155,12 @@
 					<div class="itog-item-up">
 						<div class="itog-item-up-icon"></div>
 						<div class="itog-item-up-cena">Цена-</div>
-						<div class="itog-item-up-cena-text"></div>
+						<input type="text" onkeyup="var yratext=/['0-9',':','А-я','A-z','',,,,,,]/;">
 					</div>
 					<div class="itog-item-down">
 						<div class="itog-item-down-icon"></div>
 						<div class="itog-item-down-scidka">Скидка-</div>
-						<div class="itog-item-down-scidka-text"></div>
+						<div class="itog-item-down-scidka-text" id="scidka">0</div>
 					</div>
 					<div class="final">Заказать</div>
 				</div>
