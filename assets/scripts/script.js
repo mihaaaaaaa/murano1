@@ -14,7 +14,7 @@ $(document).ready(function() {
 	$('.spisok-3-item-bl').click(function(){
 	var x = document.getElementById("value").value; // создаём переменную для вычесленний
 	x--; //отнимаем от переменной "X" 1
-	if (x = 0) {
+	if (x <= 0) {
 		x = 0 ;
 	}
 	document.getElementById("value").value = x;
