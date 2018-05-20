@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	var c = 200;
 	$('.spisok-3-item-br').click(function(){
 	var x = document.getElementById("value").value; // создаём переменную для вычесленний
 	x++; //добавляем к переменной "X" 1
@@ -7,8 +8,10 @@ $(document).ready(function() {
 	}
 	document.getElementById("value").value = x;
 	var y = document.getElementById('total').value;
-	y = +11000;
-	document.getElementById("total").innerHTML = y;
+	y = +y + +c;
+	if (x < 10) {
+	document.getElementById("total").value = y;
+	}
 	})
 
 	$('.spisok-3-item-bl').click(function(){
@@ -19,11 +22,14 @@ $(document).ready(function() {
 	}
 	document.getElementById("value").value = x;
 	var y = document.getElementById('total').value;
-	y = -11000;
-	document.getElementById("total").innerHTML = y;
+	y = y - c;
+	if (x > 0) {
+	document.getElementById("total").value = y;
+	}
+
 	})
 
-	if (total > 10000) {
-		document.getElementById("total").innerHTML = "5" ; //если "total" превышает 10000 то скидка = 5%
+	if (total > 1000) {
+		document.getElementById("total").value = 5 ; //если "total" превышает 10000 то скидка = 5%
 	}
 });

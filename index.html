@@ -120,7 +120,12 @@
 			<div class="spisok-3-name">Количество</div>
 			<div class="spisok-3-item">
 				<span class="spisok-3-item-bl" id="min"></span>
-    			<input class="spisok-3-item-input" type="number" value="1" id="value" min="1"  max="10">
+    			<input class="spisok-3-item-input" type="number" id="value" min="1"  max="10">
+    			<span class="spisok-3-item-br" id="max"></span>
+			</div>
+			<div class="spisok-3-item">
+				<span class="spisok-3-item-bl" id="min"></span>
+    			<input class="spisok-3-item-input" type="number" id="value" min="1"  max="10">
     			<span class="spisok-3-item-br" id="max"></span>
 			</div>
 
@@ -139,10 +144,10 @@
 				</div>
 				<div class="spisok-4-item-right">
 					<div class="inputpozihon">
-  						<input type="text" name="pozihon" placeholder="Введите Ваш Адрес" class="contacts pozihon">
+  						<input type="text" onkeyup="var yratext=/[':']/; if(yratext.test(this.value)) alert('Введены запрещенные символы , АтататататаТАтАтАТатА!!!!')" name="pozihon" placeholder="Введите Ваш Адрес" class="contacts pozihon">
 					</div>
 					<div class="inputphone">
-  						<input type="text" onkeyup="var k=/['0-9',':']/;" name="phone" placeholder="Введите телефон" class="contacts">
+  						<input type="number" name="phone" placeholder="Введите телефон" class="contacts">
 					</div>
 					<div class="inputemail">
   						<input type="text" name="email" placeholder="Введите E-Mail" class="contacts">
@@ -155,12 +160,12 @@
 					<div class="itog-item-up">
 						<div class="itog-item-up-icon"></div>
 						<div class="itog-item-up-cena">Цена-</div>
-						<input type="text" onkeyup="var yratext=/['0-9',':','А-я','A-z','',,,,,,]/;">
+						<input type="text" value="" id="total" onkeyup="var yratext=/['0-9',':','А-я','A-z']/; if(yratext.test(this.value)) alert('Введены запрещенные символы , АтататататаТАтАтАТатА!!!!')">
 					</div>
 					<div class="itog-item-down">
 						<div class="itog-item-down-icon"></div>
 						<div class="itog-item-down-scidka">Скидка-</div>
-						<div class="itog-item-down-scidka-text" id="scidka">0</div>
+						<input type="text"  onkeyup="var yratext=/['0-9',':','А-я','A-z']/; if(yratext.test(this.value)) alert('Введены запрещенные символы , АтататататаТАтАтАТатА!!!!')">
 					</div>
 					<div class="final">Заказать</div>
 				</div>
